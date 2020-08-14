@@ -7,19 +7,17 @@
                     Login
                     </span>
                 <div class="wrap-input100 m-b-16">
-                    <input class="input100" type="text" name="email" placeholder="Email">
+                    <input class="input100" type="email" name="email" placeholder="Email" required>
                     <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Contraseña">
+                    <input class="input100" type="password" name="pass" placeholder="Contraseña" required>
                     <span class="focus-input100"></span>
                 </div>
                 <div class="flex-sb-m w-full p-t-3 p-b-24">
-                    <div class="contact100-form-checkbox">
-                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                        <label class="label-checkbox100" for="ckb1">
-                            Recordar mi usuario
-                        </label>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+                        <label class="custom-control-label" for="defaultUnchecked">Recordar mi usuario</label>
                     </div>
                 </div>
                 <a routerLink="/register" class="txt1">

@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //Rutas Componentes
-import { LoginComponent } from './components/login/login.component';
-import { RecoveryComponent } from './components/recovery/recovery.component';
-import { HomeComponent } from './components/home/home.component';
-import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/shared/login/login.component';
+import { RecoveryComponent } from './components/shared/recovery/recovery.component';
+import { HomeComponent } from './components/shared/home/home.component';
+import { RegisterComponent } from './components/shared/register/register.component';
 
 const routes: Routes = [
   { path: 'login'   , component: LoginComponent },

@@ -7,14 +7,15 @@ import { LoginComponent } from './components/shared/login/login.component';
 import { RegisterComponent } from './components/shared/register/register.component';
 import { RecoveryComponent } from './components/shared/recovery/recovery.component';
 import { HomeComponent } from './components/shared/home/home.component';
-
+import { MapaDerivacionesComponent } from './components/shared/mapa-derivaciones/mapa-derivaciones.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     RecoveryComponent,
-    HomeComponent
+    HomeComponent,
+    MapaDerivacionesComponent
   ],
   imports: [
     BrowserModule,

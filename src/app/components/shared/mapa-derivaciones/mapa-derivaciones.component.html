@@ -1,3 +1,30 @@
-<p-dropdown [options]="cities1" [(ngModel)]="selectedCity1"></p-dropdown>
-
-<p-dropdown [options]="cities2" [(ngModel)]="selectedCity2" optionLabel="name"></p-dropdown>
+<div class="p-grid p-justify-between">
+    <p-toolbar class="col-12">
+        <div class="p-toolbar-group-right">
+            <p-button icon="pi pi-save" styleClass="p-button-primary" class="right"></p-button>
+            <p-button icon="pi pi-ban" styleClass="p-button-danger" class="right"></p-button>
+        </div>
+    </p-toolbar>
+</div>
+<p-panel header="Mapa Derivaciones" class="col-12">
+    <div class="row">
+        <p-fieldset legend="Establecimiento Origen" class="col-sm-6">
+            <p-multiSelect [options]="cities1" [(ngModel)]="selectedCities1">
+            </p-multiSelect>
+        </p-fieldset>
+        <p-fieldset legend="Especialdad" class="col-sm-6">
+            <p-multiSelect [options]="cities1" [(ngModel)]="selectedCities1">
+            </p-multiSelect>
+        </p-fieldset>
+    </div>
+    <div class="row">
+        <p-fieldset legend="Comuna Destino" class="col-sm-6">
+            <p-multiSelect [options]="cities1" [(ngModel)]="selectedCities1">
+            </p-multiSelect>
+        </p-fieldset>
+        <p-fieldset legend="Establecimiento de Destino" class="col-sm-6">
+            <p-multiSelect [options]="cities1" [(ngModel)]="selectedCities1">
+            </p-multiSelect>
+        </p-fieldset>
+    </div>
+</p-panel>

@@ -13,18 +13,18 @@ interface City {
 
 })
 export class MapaDerivacionesComponent {
+
   cities1: SelectItem[];
 
   cities2: City[];
 
-  selectedCity1: City;
+  selectedCities1: City[];
 
-  selectedCity2: City;
+  selectedCities2: City[];
 
   constructor() {
       // SelectItem API with label-value pairs
       this.cities1 = [
-          {label: 'Select City', value: null},
           {label: 'New York', value: {id: 1, name: 'New York', code: 'NY'}},
           {label: 'Rome', value: {id: 2, name: 'Rome', code: 'RM'}},
           {label: 'London', value: {id: 3, name: 'London', code: 'LDN'}},
@@ -43,3 +43,4 @@ export class MapaDerivacionesComponent {
   }
 
 }
+

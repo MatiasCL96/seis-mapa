@@ -9,6 +9,11 @@ import { RecoveryComponent } from './components/shared/recovery/recovery.compone
 import { HomeComponent } from './components/shared/home/home.component';
 import { MapaDerivacionesComponent } from './components/shared/mapa-derivaciones/mapa-derivaciones.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DropdownModule} from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    DropdownModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
